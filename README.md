@@ -10,12 +10,12 @@
 
 # App Features
 - Responsive design
+- Add new todo item
 - Lists all todo items
 - Edit todo item
 - Delete todo item
-- Add new todo item
-- Swipe left to open edit and complete menu
-- Swipe right to open delete menu
+- Swipe left action to open edit and complete menu
+- Swipe right to action open delete menu
 - Categorize todo list by date
 - Show completed todos under date
 - Show remaining time for todo item in human friendly way
@@ -41,23 +41,16 @@
 
 # How to run the project
 - Clone the project
-- Run `yarn install-deps`
-- Open 2 terminal windows run `yarn api` and `yarn client`
-
-
-
-# Folder Structure
-I have chosen the simplest folder structure because the project is fairly simple and do not have different domains that needs to be decoupled. However if we are considering large projects it's better to structure the project in a way that features are decoupled from each other. This will make the project more scalable and maintainable.
+- Run `yarn start` or `yarn start:clean` for removing cache and node_modules
 
 # Possible Improvements if I'd have more time 
 - Add tests
 - Add more error handling and user feedback for better user experience
 
 # Some answers
-- Redux ? Not needed for this project.
 - React-navigation ? It's just a single screen app.
 - Performance ? It might be improved by using React.memo and React.useCallback didn't focus on performance much.
 
 ## Other Details
 - You can use `npx prisma studio` to view the database in a nice UI.
-- 
+- Swagger is available at http://localhost:3000/api
