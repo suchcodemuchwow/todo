@@ -1,12 +1,17 @@
 {
   "name": "todo",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "api": "cd api; yarn start:dev",
-    "api:install": "cd api; yarn install",
-    "client": "cd client; yarn start",
-    "client:install": "cd client; yarn install",
-    "install-deps": "yarn api:install;yarn client:install",
-    "api-client": "chmod +x ./api/scripts/client-gen.sh; ./api/scripts/client-gen.sh"
+    "install-client": "cd client && yarn install",
+    "install-api": "cd api && yarn install",
+    "start-client": "yarn install-client && yarn --cwd client start --web",
+    "start-api": "yarn install-api && yarn --cwd api start",
+    "clean": "rm -rf client/node_modules client/.expo api/node_modules api/dist",
+    "start": "concurrently \"yarn:start-*\"",
+    "start:clean": "yarn clean && yarn start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
   }
 }

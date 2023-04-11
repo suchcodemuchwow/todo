@@ -19,5 +19,3 @@ export const todoSchema = yup.object({
     ),
   isCompleted: yup.boolean().optional(),
 });
-
-export type ITodoSchema = yup.InferType<typeof todoSchema>;

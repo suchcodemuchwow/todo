@@ -1,1 +1,1 @@
-export { todoSchema, ITodoSchema } from "./todo";
+export { todoSchema } from "./todo";
