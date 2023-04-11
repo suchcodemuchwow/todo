@@ -1,0 +1,9 @@
+### Create a new Todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Visit the gym",
+  "body": "Go to the gym and do some exercises",
+  "isCompleted": true
+}

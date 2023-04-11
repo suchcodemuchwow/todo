@@ -1,0 +1,8 @@
+### Update Todo
+PATCH http://localhost:3000/todos/clg9ywdoo0004pw3u3jolyfrl
+Content-Type: application/json
+
+{
+  "id": "clg9ywdoo0004pw3u3jol123l",
+  "body": "Invite Nejo"
+}

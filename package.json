@@ -1,0 +1,12 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "scripts": {
+    "api": "cd api; yarn start:dev",
+    "api:install": "cd api; yarn install",
+    "client": "cd client; yarn start",
+    "client:install": "cd client; yarn install",
+    "install-deps": "yarn api:install;yarn client:install",
+    "api-client": "chmod +x ./api/scripts/client-gen.sh; ./api/scripts/client-gen.sh"
+  }
+}

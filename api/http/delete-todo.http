@@ -1,0 +1,2 @@
+### Delete Todo by id
+DELETE http://localhost:3000/todos/clg9wbwr70000pwymdm8l7unc
